@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="/predict">
+            <label>international_plan:</label>
+            <input type="text" name="international_plan" required>
+
+            <label>voice_mail_plan:</label>
+            <input type="text" name="voice_mail_plan" required>
+
+            <label>number_vmail_messages:</label>
+            <input type="text" name="number_vmail_messages" required>
+
+            <label>total_day_minutes:</label>
+            <input type="text" name="total_day_minutes" required>
+
+            <label>total_day_calls:</label>
+            <input type="text" name="total_day_calls" required>
+
+            <label>total_day_charge:</label>
+            <input type="text" name="total_day_charge" required>
+
+            <label>total_eve_minutes:</label>
+            <input type="text" name="total_eve_minutes" required>
+
+            <label>total_eve_calls:</label>
+            <input type="text" name="total_eve_calls" required>
+
+            <label>total_eve_charge:</label>
+            <input type="text" name="total_eve_charge" required>
+
+            <label>total_night_minutes:</label>
+            <input type="text" name="total_night_minutes" required>
+
+            <label>total_night_calls:</label>
+            <input type="text"  name="total_night_calls" required>
+
+            <label>total_night_charges:</label>
+            <input type="text" name="total_night_charges" required>
+
+            <label>total_intl_minutes:</label>
+            <input type="text" name="total_intl_minutes" required>
+
+            <label>total_intl_calls:</label>
+            <input type="text" name="total_intl_calls" required>
+
+            <label>total_intl_charge:</label>
+            <input type="text" name="total_intl_charge" required>
+
+            <label>number_customer_service_calls:</label>
+            <input type="text" name="number_customer_service_calls" required>
+
+            <button type="submit" value="Predict">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
