@@ -1,0 +1,2 @@
+﻿
+pip install Flask matplotlib numpy pandas scikit-learn sklearn gevent
